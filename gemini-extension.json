@@ -1,0 +1,9 @@
+{
+  "name": "chime-scheduler",
+  "version": "1.0.0",
+  "mcpServers": {
+    "chime-scheduler": {
+      "httpUrl": "https://schedule.getchime.co/mcp"
+    }
+  }
+}
