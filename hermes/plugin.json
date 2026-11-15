@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "chime-scheduler",
+  "version": "1.0.0",
+  "description": "Schedule and publish LinkedIn posts on your own profile from Hermes, through Chime Scheduler's hosted MCP server. Say when a post should go out in your own words and the exact local time is echoed back. Free.",
+  "author": {
+    "name": "Wednesday Solutions",
+    "url": "https://schedule.getchime.co"
+  },
+  "homepage": "https://schedule.getchime.co",
+  "repository": "https://github.com/wednesday-solutions/chime-scheduler",
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "linkedin scheduler",
+    "linkedin post scheduler",
+    "schedule linkedin posts",
+    "social media scheduler",
+    "social media planning",
+    "content calendar",
+    "schedule posts",
+    "linkedin",
+    "mcp"
+  ],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "servers": {
+        "chime-scheduler": { "trust": "untrusted" }
+      }
+    }
+  }
+}
