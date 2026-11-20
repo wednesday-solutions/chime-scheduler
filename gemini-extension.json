@@ -1,6 +1,7 @@
 {
   "name": "chime-scheduler",
   "version": "1.0.0",
+  "description": "LinkedIn post scheduler for Gemini CLI: write, schedule and publish LinkedIn posts from your chat, with images, video and a first comment. Uses Chime Scheduler's hosted MCP server.",
   "mcpServers": {
     "chime-scheduler": {
       "httpUrl": "https://schedule.getchime.co/mcp"
