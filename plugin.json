@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "chime-scheduler",
+  "version": "1.0.0",
+  "description": "Schedule LinkedIn posts and publish to LinkedIn from your AI chat. Chime Scheduler is a LinkedIn post scheduler and social media scheduler: write a post, say when it should go out in your own words, and the exact local time is echoed back. Plan a week of LinkedIn content, add images, video and a first comment, and edit or cancel posts before they go out.",
+  "author": {
+    "name": "Wednesday Solutions",
+    "email": "support@getchime.co",
+    "url": "https://www.wednesday.is"
+  },
+  "homepage": "https://schedule.getchime.co/?utm_source=agent_plugin&utm_medium=directory&utm_campaign=scheduler_listings",
+  "repository": "https://github.com/wednesday-solutions/chime-scheduler",
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "linkedin-scheduler",
+    "linkedin-post-scheduler",
+    "schedule-linkedin-posts",
+    "social-media-scheduler",
+    "content-calendar",
+    "post-scheduler",
+    "linkedin",
+    "personal-branding",
+    "mcp"
+  ]
+}
