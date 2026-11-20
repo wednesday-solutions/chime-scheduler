@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "chime-scheduler": {
+      "type": "http",
+      "url": "https://schedule.getchime.co/mcp"
+    }
+  }
+}
