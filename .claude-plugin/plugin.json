@@ -33,5 +33,8 @@
       "type": "http",
       "url": "https://schedule.getchime.co/mcp"
     }
-  }
+  },
+  "supportUrl": "https://schedule.getchime.co/help",
+  "documentationUrl": "https://github.com/wednesday-solutions/chime-scheduler#readme",
+  "termsOfServiceUrl": "https://schedule.getchime.co/terms"
 }
