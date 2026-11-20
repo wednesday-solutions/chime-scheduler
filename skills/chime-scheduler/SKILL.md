@@ -1,6 +1,6 @@
 ---
 name: chime-scheduler
-description: Schedule, publish, list, edit or cancel LinkedIn posts on the user's own profile with Chime Scheduler. Use when the user asks to post on LinkedIn, schedule a LinkedIn post for a time ("Tuesday at 9", "tomorrow morning"), see what is scheduled, move or change a post, cancel one, or add images or a video to a post.
+description: Schedule, publish, list, edit or cancel LinkedIn posts on the user's own profile with Chime Scheduler. Use when the user asks to post on LinkedIn, schedule a LinkedIn post for a time ("Tuesday at 9", "tomorrow morning"), see what is scheduled, move or change a post, cancel one, delete a post that is already live, or add images or a video to a post.
 ---
 
 # Chime Scheduler
@@ -49,8 +49,9 @@ MCP settings and sign in with LinkedIn. Do not try to sign in for them.
 - `edit_post` changes the text, first comment, time or media of a post that has not gone out yet.
   Repeat the new time line back.
 - `cancel_post` cancels a scheduled or held post, or deletes a draft. Confirm which post (by time
-  and the start of its text) before cancelling. It never deletes anything already on LinkedIn; if
-  the user wants a published post gone, tell them to delete it on LinkedIn.
+  and the start of its text) before cancelling. Called on a post that is already live on LinkedIn, it
+  deletes that post from LinkedIn. That can't be undone, so ask the user to confirm first, showing the
+  post's text and when it went out.
 - Held or failed posts never go out on their own, even after a reconnect. Ask the user, then
   `post_now` with that post, `edit_post` with a new time, or `cancel_post`.
 - A post marked unconfirmed counts as posted: LinkedIn did not confirm it, so ask the user to check
