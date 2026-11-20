@@ -13,7 +13,7 @@ media scheduler for planning posts and keeping a content calendar without anothe
 
 **Free forever.** No install, no API key, no separate account. You sign in with LinkedIn.
 
-**Website:** https://schedule.getchime.co
+**Website:** https://schedule.getchime.co/?utm_source=github_repo&utm_medium=directory&utm_campaign=scheduler_listings
 
 **Server URL:** `https://schedule.getchime.co/mcp` (Streamable HTTP, OAuth: sign in with LinkedIn)
 
@@ -35,6 +35,7 @@ media scheduler for planning posts and keeping a content calendar without anothe
 - Post images (up to 9) or one MP4 video through a private, single-use upload link.
 - See scheduled, draft and published posts; reschedule, edit or cancel anything that has not gone
   out yet.
+- Delete a post that is already live on LinkedIn (you are asked first, because it can't be undone).
 - Check that LinkedIn is connected and when the login expires.
 
 Chime Scheduler posts to personal LinkedIn profiles today.
@@ -113,16 +114,16 @@ discovers the OAuth settings from the server and opens the LinkedIn sign-in.
 | `post_now` | Write | Publishes a post right away and returns the live link, or posts a held or failed post now. |
 | `list_posts` | Read | Lists posts with status, local time and the start of the text. |
 | `edit_post` | Write | Changes the text, first comment, time or media of a post that has not been published yet. |
-| `cancel_post` | Write | Cancels a scheduled or held post or deletes a draft. Never deletes anything already on LinkedIn. |
+| `cancel_post` | Write | Cancels a scheduled or held post or deletes a draft. Deletes a post already live on LinkedIn only after you confirm. |
 | `get_upload_link` | Write | Creates a private, single-use upload link for up to 9 images (JPG, PNG or GIF, 8 MB each) or one MP4 video (50 MB). |
 | `list_uploads` | Read | Lists recent uploads with file names, kind and size. |
 
 ## Try saying
 
-- "Write a LinkedIn post about our product launch and schedule it for Tuesday at 9am."
-- "What LinkedIn posts do I have scheduled this week?"
-- "Move my hello post to Friday at 10am and add a first comment with our website."
-- "Plan three LinkedIn posts for next week and schedule them for Monday, Wednesday and Friday mornings."
+- "Interview me for 2 minutes about my work, then write my first LinkedIn post and schedule it for tomorrow at 9am."
+- "Plan my LinkedIn week: suggest 3 post ideas, draft them, and schedule them Mon, Wed and Fri at 9am."
+- "Give me 5 LinkedIn post ideas for someone in my role, write the best one, and schedule it for Tuesday at 9am."
+- "Delete the LinkedIn post I published most recently." (the agent asks you first)
 
 ## How it works and privacy
 
@@ -134,7 +135,7 @@ is held and never posted late without you choosing to.
 Limitations: personal profiles only (no company pages), posts up to 3,000 characters, no PDF
 carousels, and the LinkedIn login lasts 60 days before you reconnect.
 
-- Website: https://schedule.getchime.co
+- Website: https://schedule.getchime.co/?utm_source=github_repo&utm_medium=directory&utm_campaign=scheduler_listings
 - Help: https://schedule.getchime.co/help
 - Privacy: https://schedule.getchime.co/privacy
 - Terms: https://schedule.getchime.co/terms

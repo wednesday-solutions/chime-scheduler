@@ -57,10 +57,10 @@ link on any device, and follow Hermes's prompts. An unattended run never waits f
 
 ## Try saying
 
-- "Write a LinkedIn post about our product launch and schedule it for Tuesday at 9am."
-- "What LinkedIn posts do I have scheduled this week?"
-- "Move my hello post to Friday at 10am and add a first comment with our website."
-- "Post this on LinkedIn now."
+- "Interview me for 2 minutes about my work, then write my first LinkedIn post and schedule it for tomorrow at 9am."
+- "Plan my LinkedIn week: suggest 3 post ideas, draft them, and schedule them Mon, Wed and Fri at 9am."
+- "Give me 5 LinkedIn post ideas for someone in my role, write the best one, and schedule it for Tuesday at 9am."
+- "Delete the LinkedIn post I published most recently." (the agent asks you first)
 
 ## Tools
 
@@ -74,7 +74,7 @@ The server provides these tools at run time.
 | `schedule_post` | Write | Yes | Schedules a post for a time on your clock, or saves a draft, with an optional first comment and images or video. |
 | `post_now` | Write | Yes | Publishes a post on LinkedIn right away and returns the live link. |
 | `edit_post` | Write | Yes | Changes the text, first comment, time or media of a post that has not gone out yet. |
-| `cancel_post` | Write | Yes | Cancels a scheduled or held post or deletes a draft. Never deletes anything already on LinkedIn. |
+| `cancel_post` | Write | Yes | Cancels a scheduled or held post or deletes a draft. Deletes a post already live on LinkedIn only after you confirm. |
 | `get_upload_link` | Write | Yes | Creates a private, single-use upload link for up to 9 images or one MP4 video. |
 
 Limits: personal LinkedIn profiles only (no company pages), posts up to 3,000 characters, no PDF
@@ -120,7 +120,7 @@ carousels, and the LinkedIn login lasts 60 days before you reconnect.
 
 ## Support
 
-- Website: https://schedule.getchime.co
+- Website: https://schedule.getchime.co/?utm_source=hermes&utm_medium=directory&utm_campaign=scheduler_listings
 - Email: [support@getchime.co](mailto:support@getchime.co)
 - Issues: https://github.com/wednesday-solutions/chime-scheduler/issues
 
