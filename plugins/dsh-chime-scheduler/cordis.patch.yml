@@ -1,0 +1,6 @@
+# Patch layer contributed by the dsh-chime-scheduler bundle: one row that
+# registers Chime Scheduler's hosted MCP server (OAuth, LinkedIn sign-in) with
+# the shared MCP manager. Override `url` or `toolLoading` on this row if needed.
+- insert:
+    - id: chime-scheduler
+      name: dsh-chime-scheduler

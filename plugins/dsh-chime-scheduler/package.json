@@ -1,0 +1,60 @@
+{
+  "name": "dsh-chime-scheduler",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness plugin for Chime Scheduler: write, schedule, publish, edit and delete LinkedIn posts from the agent. Hosted MCP server with OAuth (LinkedIn sign-in), shown on the Plugins page.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "lib/",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "mcp",
+    "linkedin",
+    "linkedin-scheduler",
+    "social-media-scheduler",
+    "chime-scheduler"
+  ],
+  "author": {
+    "name": "Wednesday Solutions",
+    "email": "support@getchime.co",
+    "url": "https://schedule.getchime.co"
+  },
+  "homepage": "https://github.com/wednesday-solutions/chime-scheduler/tree/main/plugins/dsh-chime-scheduler#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wednesday-solutions/chime-scheduler.git",
+    "directory": "plugins/dsh-chime-scheduler"
+  },
+  "bugs": {
+    "url": "https://github.com/wednesday-solutions/chime-scheduler/issues"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "publishConfig": {
+    "access": "public"
+  }
+}
