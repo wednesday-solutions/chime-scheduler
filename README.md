@@ -93,6 +93,19 @@ Add to `.vscode/mcp.json`:
 }
 ```
 
+### Kiro
+[![Add to Kiro](https://kiro.dev/images/add-to-kiro.svg)](https://kiro.dev/launch/mcp/add?name=chime-scheduler&config=%7B%22url%22%3A%22https%3A%2F%2Fschedule.getchime.co%2Fmcp%22%7D)
+
+Or add to `~/.kiro/settings/mcp.json`:
+```json
+{
+  "mcpServers": {
+    "chime-scheduler": { "url": "https://schedule.getchime.co/mcp" }
+  }
+}
+```
+Kiro opens the LinkedIn sign-in the first time you use it.
+
 ### Gemini CLI
 ```bash
 gemini extensions install https://github.com/wednesday-solutions/chime-scheduler
